@@ -1,0 +1,3 @@
+def format_poem(poem):
+    poem_split = poem.split(". ")
+    return ".\n".join(poem_split)
