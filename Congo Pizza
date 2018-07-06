@@ -1,0 +1,5 @@
+def box_capacity(length, width, height):
+    boxes_length = length * 12 // 16
+    boxes_width = width * 12 // 16
+    boxes_height = height * 12 // 16
+    return boxes_length * boxes_width * boxes_height

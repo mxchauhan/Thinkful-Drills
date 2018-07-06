@@ -1,0 +1,11 @@
+def categorize_study(p_value, req):
+    bs_factor = 2 ** (6-req)
+    if p-value * bs_factor < 0.05:
+        if req > 1:
+            return "Fine"
+        else:
+            return "Needs review"
+    if p-value * bs_factor >= 0.05 and p-value * bs_factor < 0.15:
+        return "Needs review"
+    else:
+        return "Pants on fire"

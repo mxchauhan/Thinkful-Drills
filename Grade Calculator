@@ -1,0 +1,16 @@
+def calculate_grade(scores):
+    total_score = 0
+    for score in scores:
+        total_score = total_score + score
+    mean_score = total_score / len(scores)
+    if mean_score >= 90 and mean_score <= 100:
+        grade = 'A'
+    if mean_score >= 80 and mean_score < 90:
+        grade = 'B'
+    if mean_score >= 70 and mean_score < 80:
+        grade = 'C'
+    if mean_score >= 60 and mean_score < 70:
+        grade = 'D'
+    if mean_score < 60:
+        grade = 'F'
+    return grade

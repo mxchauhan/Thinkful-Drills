@@ -1,0 +1,10 @@
+def user_contacts(data):
+    result = {}
+    for contact in data:
+        key = contact[0]
+        try:
+            value = contact[1]
+        except IndexError:
+            value = None
+        result[key] = value
+    return result
